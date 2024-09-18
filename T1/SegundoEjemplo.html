@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Ejemplo de script en encabezado de página</title>
+        <script>
+            function mensaje(){
+                    document.write("<h1 align='center'>Hola mundo</h1>");
+                    console.log("Hola mundo"); /* Como en la consola de java, que lo mostraba debajo */
+}
+        </script>
+    </head>
+    <body>
+        <p id="parrafo"></p>
+        
+        <script>
+        mensaje();
+       
+        </script>
+        
+        <script>
+             document.getElementById("parrafo").innerHTML = 5 + 6;
+        </script>
+    </body>
+</html>
