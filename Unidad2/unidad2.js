@@ -1,4 +1,5 @@
 function testUnidad2(){
+    /*
     var cadena = "abc";
     var cadena2 = String("abc");
     var cadena3 = new String("abc");
@@ -76,11 +77,69 @@ function testUnidad2(){
     }else{
         cuantitativo = "Plural";
     }
-        */
+        
     
     document.write(`
         ${l > 1 ? `Estas ${l} bibliotecas` : "Esta biblioteca"}: 
         ${libs.join(", ")}[""]...
     `);
+    */
+
+    //Ejercicio de preguntar nota y que te muestre aprobado o suspenso
+    /*
+    let nombre;
+    let nota;
+    nombre = prompt('Escriba nombre :'); //abre consola
+    nota = prompt('Escriba su nota :')
+
+    if(nota >=5){
+        alert(nombre + " esta aprobado con un "+nota);
+    }else{
+        alert(nombre + "esta suspenso con un "+nota);
+    }
+
+    */
+
+    //pedir dos numeros, convertir a enteros y ver cual es mayor de los dos.
+/*
+    let num1;
+    let num2;
     
+    num1 = prompt('Introduce el primer numero :');
+    num2 = prompt('Introduce el segundo numero :');
+
+    num1 = parseInt(num1);
+    num2 = parseInt(num2);
+
+    if(num1 > num2){
+        alert(num1 + " es mayor que el "+num2);
+    }else{
+        alert(num2 + " es mayor que el "+num1);
+    }
+        */
+
+    //promedio de 3 notas
+    let nota1, nota2, nota3;
+    nota1 = prompt('Introduce la nota 1:');
+    nota2 = prompt('Introduce la nota 2:');
+    nota3 = prompt('Introduce la noat 3');
+
+    nota1 = parseInt(nota1);
+    nota2 = parseInt(nota2);
+    nota3 = parseInt(nota3);
+
+    let promedio;
+    promedio = (nota1+nota2+nota3)/3;
+
+    if(promedio >= 9){
+        alert("Ha sacado un sobresaliente.")
+    }else if(promedio >= 7 && promedio<=8){
+        alert("Ha sacado un notable.")
+    }else if(promedio >=6){
+        alert("Ha sacado un bien.")
+    }else if(promedio >= 5){
+        alert("Ha sacado un suficiente.")
+    }else if(promedio < 5){
+        alert("Ha suspendido.")
+    }
 }
