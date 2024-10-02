@@ -178,6 +178,10 @@ function testUnidad2(){
         
     }
         */
+
+    let x;
+    x = prompt('Introduce un numero x :');
+    x = parseInt(x);
         switch(true){
             case x > 0 && x < 10:
                 alert("x > 0 && x < 10");
