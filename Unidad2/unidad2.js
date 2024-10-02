@@ -85,7 +85,7 @@ function testUnidad2(){
     `);
     */
 
-    //Ejercicio de preguntar nota y que te muestre aprobado o suspenso
+    //1. Ejercicio de preguntar nota y que te muestre aprobado o suspenso
     /*
     let nombre;
     let nota;
@@ -100,7 +100,7 @@ function testUnidad2(){
 
     */
 
-    //pedir dos numeros, convertir a enteros y ver cual es mayor de los dos.
+    //2. pedir dos numeros, convertir a enteros y ver cual es mayor de los dos.
 /*
     let num1;
     let num2;
@@ -118,7 +118,8 @@ function testUnidad2(){
     }
         */
 
-    //promedio de 3 notas
+    //3. promedio de 3 notas
+    /*
     let nota1, nota2, nota3;
     nota1 = prompt('Introduce la nota 1:');
     nota2 = prompt('Introduce la nota 2:');
@@ -142,4 +143,58 @@ function testUnidad2(){
     }else if(promedio < 5){
         alert("Ha suspendido.")
     }
+        
+*/
+//4. mismo ejercicio pero con switch
+/*
+    let valor;
+    valor = prompt('Ingrese un valor entre 1 y 5 :');
+    valor = parseInt(valor);
+
+    switch(valor){
+        case 1:
+            alert('uno');
+            break;
+
+        case 2:
+            alert('dos');
+            break;
+
+        case 3:
+            alert('tres');
+            break;
+
+        case 4:
+            alert('cuatro');
+            break;
+
+        case 5:
+            alert('cinco');
+            break;
+
+
+        default:
+        alert('Debe ingresar un valor comprendido entre 1 y 5:');
+        
+    }
+        */
+        switch(true){
+            case x > 0 && x < 10:
+                alert("x > 0 && x < 10");
+                break;
+
+            case x > 0 && x < 20:
+                alert("x > 0 && x < 20");
+                break;
+
+            case x > 0 || x < 100:
+                alert("x < 0 && x > 100");
+                break;
+
+            default:
+                alert("Ninguno");
+
+
+        }
+
 }
