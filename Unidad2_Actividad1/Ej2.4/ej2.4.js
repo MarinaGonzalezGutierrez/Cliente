@@ -4,8 +4,12 @@ como resultado los días que hemos vivido hasta el momento (suponiendo años de 
 */
 function testEj2_4(){
     let nombre, edad;
-    
-    nombre = prompt('Introduce un nombre :');
-    edad = prompt('Introduce la edad :')
+     let diasVividos;
 
+     nombre = prompt("Introduce tu nombre :");
+     edad = prompt("Introduce tu edad :");
+
+     diasVividos =  edad * 365;
+
+     alert("Has vivido :"+diasVividos+ " dias.");
 }
