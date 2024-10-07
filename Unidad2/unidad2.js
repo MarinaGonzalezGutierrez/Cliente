@@ -179,6 +179,8 @@ function testUnidad2(){
     }
         */
 
+    //UN SWITCH
+    /*
     let x;
     x = prompt('Introduce un numero x :');
     x = parseInt(x);
@@ -200,5 +202,25 @@ function testUnidad2(){
 
 
         }
+                */
+
+        //numeros del 1 al 100 con while
+        /*
+        let x;
+        x = 1;
+        while(x<=100){
+            document.write(x + "<br/>");
+            x++;
+        }
+            */
+
+
+      let valor;
+      do{
+        valor = prompt('Ingrese un valor entre 0 y 999: ','');
+        valor = parseInt(valor);
+        //isNaN -> boleano (comprueba que sea un Not a Number)
+        if(valor<0 ||valor>999 || isNaN(valor))
+      }while(valor>0 && valor<=999);
 
 }
