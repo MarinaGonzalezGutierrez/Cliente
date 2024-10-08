@@ -8,12 +8,8 @@
             let radio, longitud, area;
 
             radio = prompt("Introduce el radio :");
-            if(isNaN(radio) || radio<=0){
-                alert("Por favor, introduce un valor valido.");
-                return;
-            }
             longitud = 2*Math.PI*radio;
-            alert("La longitud de la circunferencia es :"+longitud);
+            alert("LONGITUD :"+longitud);
             
             area = Math.PI * Math.pow(radio, 2);
             alert("AREA: " + area);
