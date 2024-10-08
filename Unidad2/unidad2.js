@@ -214,7 +214,7 @@ function testUnidad2(){
         }
             */
 
-
+/*
       let valor;
       do{
         valor = prompt('Ingrese un valor entre 0 y 999: ','');
@@ -222,5 +222,7 @@ function testUnidad2(){
         //isNaN -> boleano (comprueba que sea un Not a Number)
         if(valor<0 ||valor>999 || isNaN(valor))
       }while(valor>0 && valor<=999);
+*/
+
 
 }
