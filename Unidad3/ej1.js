@@ -28,9 +28,25 @@ function compararCadenaLongitud(){
 }
 
 function testUnidad3(){
+    /*
     let frutas = ['Naranja', 'Pera', 'Melocoton', 'Albaricoque', 'Uva'];
     let frutasReverse = frutas.slice().reverse();
     frutas.sort(compararCadenaLongitud);
     document.write(frutas.join(', '));
     document.write('<br>', frutasReverse.join(', '))
+    */
+
+    var dimension1 = ["00", "01", "02"];
+    var dimension2 = ["10", "11", "12"];
+
+    var matriz2d = [dimension1, dimension2];
+    alert(matriz2d[1][2]); //mostraria 12
+}
+
+function testUnidad4(){
+    let dimension1 = ["00", "01", "02"];
+    dimension1.unshift("03");
+    document.write(dimension1.join(' ,'));
+    let x = dimension1.pop();
+    document.write
 }
