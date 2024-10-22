@@ -1,0 +1,66 @@
+<html>
+    <head>
+</head><body>
+    
+
+    
+        <script>
+          function mostrarMenu(){
+            let opcion;
+
+            do{
+                //mostrar menu
+                opcion = prompt("Seleccione una opcion : \n "+ "1. Salir \n"+ "2. Suma \n"+ "3. Factorial \n");
+                switch(opcion){
+
+                    case '1':
+                        alert("Fin programa");
+                        break;
+
+                    case '2':
+                     
+                        let numSumatorio = parseInt(prompt("Introduce numero para calcular sumatorio :"));
+                        let sumatorio = calcularSumatorio(numSumatorio);
+                    
+                        alert("El sumatorio de "+numSumatorio+ " es "+sumatorio);
+                        break;
+
+                    case '3':
+                       
+                        let numFactorial = parseInt(prompt("Introduce factorial"));
+                        let factorial= calcularFactorial(numFactorial);
+                        alert("Factorial "+numFactorial+ " es "+factorial);
+                        break;
+
+                    default:
+                        alert("ERROR");
+                }
+            }while(opcion != 1);
+
+          }
+
+          //crear funcion para calcular sumatorio y otra para el factorial
+
+          function calcularSumatorio(numSumatorio){
+            let sumatorio=0;
+            for(let i=0; i <numSumatorio ; i++){
+                    sumatorio+=i;
+            }
+            return sumatorio;
+          }
+
+          function calcularFactorial(numFactorial){
+            let factorial = 1;
+            for(let i=1; i<=numFactorial; i++){
+                factorial*=i;
+            }
+            return factorial;
+          }
+        </script>
+        </head>
+   <body onload = "mostrarMenu()">
+
+   </body>;
+    
+
+</html>

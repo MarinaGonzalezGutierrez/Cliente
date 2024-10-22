@@ -1,3 +1,41 @@
 <html>
-    
+    <head>
+        
+    </head>
+
+    <body>
+       <script>
+        function pedirNumero(mensaje){
+
+    return parseInt(prompt(mensaje),10); //solicita 10 numeros, y cuando encuentre numeros mas bajos de 50.
+}
+
+function ejecutar(){
+    let num1, num2;
+
+    //solicitar hasta que dos sean menores de 50
+    do{
+        num1 = pedirNumero("Introduce (entero):");
+        num2 = pedirNumero("Introduce (entero):");
+
+    }while(num1 >= 50 || num2 >= 50);
+
+    //determinar cual es mayor y cual es menor
+    let menor = Math.min(num1,num2); //funcion jvs escocger menor
+    let mayor = Math.max(num1, num2); //escocger mayor
+
+    //incrementar ek menor y decrementar el mayor
+    while(menor <= mayor){
+menor+=5;
+mayor-=2;
+
+document.write(`menor = ${menor}, mayor=${mayor}`); //comillas invertidas
+    }
+}
+    ejecutar();
+
+       </script>
+    </body>
 </html>
+
+

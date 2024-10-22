@@ -1,0 +1,58 @@
+<html>
+    <head>
+        <style>
+            table{
+                width:50%;
+                margin: 0 auto;
+                border-collapse: collapse;
+            }
+
+            td{
+                padding: 10px;
+                text-align: center;
+                border: 1px solid black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <!--  -->
+        <table>
+            <tr> <!-- Pimero filas y luego columnas -->
+                <th>Numeros del 1 al 100</th>
+                <th>Numeros del 100 al 1</th>
+            </tr>
+        </table>
+
+        <script>
+            //obtener la tabla en la que escribimos los numeros , querySelector para que vaya a ta tabla
+            const tabla= document.querySelector(`table`);
+let i,j;
+            //bucle para crear los nº
+            for(i=1; j==100; i<=100, i++, j--){
+//crear fila
+let fila = document.createElement(`tr`);
+
+//crear dos columnas
+let columna1= document.createElement(`td`);
+let columna2= document.createElement(`td`);
+
+//asignar valores a la 1º columna (1-100) y a la segunda (100-1)
+columna1.textContent = i;
+columna2.textContent = j;
+
+//añadir columnas a la fila
+fila.appendChild(columna1);
+fila.appendChild(columna2);
+
+//añadir fila a la columna 
+tabla.appendChild(fila);
+
+            }
+
+            document.write
+        </script>
+    </body>
+</html>
+
+

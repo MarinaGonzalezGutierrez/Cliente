@@ -1,0 +1,21 @@
+<html>
+    <head>
+        
+    </head>
+
+    <body>
+        <script>
+            function fahrenheitACentigrados(fahrenheit){
+                let centigrados = (5/9) * (fahrenheit - 32);
+                return centigrados;
+            }
+            let fahrenheit = parseFloat(prompt("Introducir grados fahrenheit :"));
+
+            //mostrar grados fahrenheit
+            document.write(`Grados fahrenheit : ${fahrenheit}`);
+            let centigrados = fahrenheitACentigrados(fahrenheit);
+            document.write("<br>");
+            document.write(`Grados centigrados : ${centigrados.toFixed(2)}`); //solo dos decimales
+        </script>
+    </body>
+</html>
