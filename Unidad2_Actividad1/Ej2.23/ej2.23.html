@@ -1,0 +1,32 @@
+<!-- Ejercicio 2.23
+Calcula cuantos números pares hay entre dos introducidos -->
+
+<html>
+    <head></head>
+    <body>
+        <script>
+            function numPares(){
+                let num =0;
+                let par=0;
+                let impar=0; 
+                
+                for(let i=0; i< 2; i++){
+                    num = prompt("Introduce un numero :");
+                    num = parseInt(num);
+                    if(num % 2 ==0){
+                        par++;
+
+                    }else{
+                        impar++;
+                    }
+
+                }
+
+                document.write("Hay "+par+ " numeros pares <br>" );
+                
+                document.write("Hay "+impar+ " numeros impares");
+            }
+            numPares();
+        </script>
+    </body>
+</html>
