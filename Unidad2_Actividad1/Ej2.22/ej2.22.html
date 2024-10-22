@@ -1,0 +1,29 @@
+<!-- Ejercicio 2.22
+Calcula la media de una serie de números introducidos por teclado. -->
+<html>
+    <head></head>
+    <body>
+        <script>
+            
+            function mediaNumeros(){
+                 let numIntroducir = prompt('¿Cuantos numeros quieres introducir?');
+                 numIntroducir = parseInt(numIntroducir);
+                 let media=0, suma=0;
+                for(let i=0; i< numIntroducir; i++){
+                    let num =prompt("Introduce un numero :");
+                    num = parseInt(num);
+                    suma = suma+num;
+                    media = suma/numIntroducir;
+
+
+                }
+                document.write("La media es : "+media);
+
+        }
+               
+           
+           mediaNumeros();
+
+        </script>
+    </body>
+</html>
