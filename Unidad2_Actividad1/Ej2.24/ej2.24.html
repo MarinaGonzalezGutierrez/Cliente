@@ -1,37 +1,36 @@
 <html>
-    <body>
-        <script>
-            let correcto;
-            do{
-            correcto = true;  
-             let mes = parseInt(prompt("Introduce un mes en forma numerica :"));
-             mes = mes.trim(); //espacios
-          switch(mes){
-            case '4':
-            case '6':
-            case '9':
-            case '11':
-                alert("El mes intoducido tiene 30 dias");
-                break;
-                case '1':
-                case '3':
-                case '5':
-                case '7':
-                case '8':
-                case '10':
-                case '12':
-                    alert("El mes introducido tiene 31 dias");
-                    break;
+  <body>
+    <script>
+      let correcto;
+      do {
+        correcto = true;
+        let mes = parseInt(prompt("Introduce un mes en forma numérica:"));
+        // No es necesario usar trim() aquí, ya que parseInt() ignora los espacios
 
-                case 2:
-                    alert("El mes introducido puee tener 28 o 29 dias si es bisiesto. ");
-                    break;
-                    default:
-                        alert("El mes introducido no tiene un formato correcto.");
-                        correcto = false;
-                        
-          }
-        }while(!correcto);
-        </script>
-    </body>
+        switch (mes) {
+          case 4:
+          case 6:
+          case 9:
+          case 11:
+            alert("El mes introducido tiene 30 días");
+            break;
+          case 1:
+          case 3:
+          case 5:
+          case 7:
+          case 8:
+          case 10:
+          case 12:
+            alert("El mes introducido tiene 31 días");
+            break;
+          case 2:
+            alert("El mes introducido puede tener 28 o 29 días si es bisiesto.");
+            break;
+          default:
+            alert("El mes introducido no tiene un formato correcto.");
+            correcto = false;
+        }
+      } while (!correcto);
+    </script>
+  </body>
 </html>
