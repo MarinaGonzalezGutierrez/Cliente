@@ -50,3 +50,41 @@ function testUnidad4(){
     let x = dimension1.pop();
     document.write
 }
+
+function eliminarCont(){
+    //array conteniendo datos y elimina el ultimo elemento
+    let datos = ['gato', 'perro', 'conejo', 'gallina', 'tarantula'];
+    let nuevosDatos = [];
+    for(let i=0; i<datos.length-1; i++){
+        nuevosDatos[i] = datos[i];
+    }
+    document.write(nuevosDatos.join(", "));
+    datos.pop();
+    document.write(datos.join(", "));
+}
+
+//EJ3: EJERCICIOS ENTREGAR
+function ej3(){
+    const mayorDe3 = (x, y, z) => {
+        if(x>y){
+            if(x>z)
+                return x;
+            else
+            return z;
+        }
+        else if (y> z)
+            return y;
+        else
+        return z;
+    const mayorDe3 = (x,y,z) => {
+        let numeros = [x,y,z];
+        let numeroMax = numeros.reduce((max, numero)=> numero > max ? numero : max);
+        return numero max;
+    }
+document.write(mayorDe3(1,4,5));
+
+    }
+
+}
+
+
