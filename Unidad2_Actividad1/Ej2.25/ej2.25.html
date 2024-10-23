@@ -1,0 +1,47 @@
+<!-- Escribir un algoritmo que permita jugar a doble o nada: El jugador apuesta una cantidad 
+ y tira una moneda (aleatoriamente). Si sale cara obtiene el doble de la cantidad apostada.
+  Si sale cruz lo pierde todo. -->
+
+<html>
+    <head>
+    </head>
+
+    <body>
+        <script>
+           function moneda(){
+            let jugarDeNuevo = true;
+            while (jugarDeNuevo){
+                let cantidadApostada = prompt("Ingrese la cantidad a apostar :");
+                cantidadApostada = parseFloat(cantidadApostada);
+
+                if(isNaN(cantidadApostada || cantidadApostada <=0)){
+                    alert("Ingrese una cantidad valida");
+                    continue;
+                }
+                        
+                let resultado;
+                if (Math.random() < 0.5) {
+                resultado = "cara";
+                } else {
+                resultado = "cruz";
+                }
+
+                //mostrar resultado
+                if(resultado == "cara"){
+                    let cantidadGanada = cantidadApostada * 2;  
+                    alert(`¡Ganaste! La cantidad apostada fue ${cantidadApostada} y ganaste ${cantidadGanada}`);
+                }else{
+                    alert(`¡Perdiste! La cantidad apostada fue ${cantidadApostada} y perdiste todo`);     
+                }
+
+                let respuesta = prompt("¿Desea jugar de nuevo? (si/no)");
+                if(respuesta.toLowerCase() !== "si"){
+                    jugarDeNuevo = false;
+                }
+            }
+           }
+
+           moneda();
+        </script>
+    </body>
+</html>
