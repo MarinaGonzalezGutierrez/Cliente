@@ -1,0 +1,26 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function sumaNum(){
+                /* Leer un número “n” por teclado y escribir la suma de todos los números entre 1 y “n”   */
+                let num = parseInt(prompt("Introduce un numero :"));
+
+                if(num>0){
+                    let suma=0;
+
+                    for(let i=1; i<= num; i++){
+                        suma = suma+i;
+
+                    }
+                    document.write("La suma de todos los numeros entre 1 y "+num+ " es :"+suma);
+                }else{
+                    document.write("Error, introduce un numero positivo.")
+                }
+            }
+            sumaNum();
+        </script>
+    </body>
+</html>

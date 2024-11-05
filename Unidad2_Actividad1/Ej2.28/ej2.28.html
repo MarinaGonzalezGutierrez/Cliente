@@ -1,0 +1,36 @@
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function condiciones(){
+    let v1=parseInt(prompt("Introduce el primer numero"));
+	let v2=parseInt(prompt("Introduce el segundo numero"));
+	let v3=parseInt(prompt("Introduce el tercer numero"));
+	if (v1==0 && v2==0 && v3==0){
+		alert("Todas las variables son cero. ");
+	}
+	if (v1>0 && v2>0 && v3>0){
+		alert("Todas las variables son positivas. ");
+	}
+	if ((v1>=0 && v2>=0 && v3>=0) || (v1<0 && v2<0 && v3<0) ){
+		alert("Todas las variables tienen el mismo signo.");
+	}
+	if (v1!=v2 && v1!=v3 && v2!=v3){
+		alert("Todos sus valores son distintos.");
+	}
+	if (v1==v2 || v1==v3 || v2==v3){
+		alert("Dos de sus valores coinciden.");
+	}
+	if((v1==v2 && v2!=v3) || (v1!=v3 && v2==v3) || (v1!=v2 && v1==v3)){
+		alert("Como máximo dos de sus valores coinciden.");
+	}
+	if((v1>v2 && v2>v3) || (v1<v2 && v2<v3)){
+		alert("El valor de v2 está comprendido entre los de v1 y v3.");
+	}
+            }
+            condiciones();
+        </script>
+    </body>
+</html>
