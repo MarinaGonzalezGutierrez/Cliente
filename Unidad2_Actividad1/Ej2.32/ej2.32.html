@@ -1,0 +1,26 @@
+<!-- Hacer un programa que pida por teclado la edad de una persona y si es mayor de 65 años que escriba
+“Está usted jubilado”, y sino “Todavía está usted en activo”. Utilizando el operador condicional
+<expresión>?<sentencia1>:<sentencia2>
+ -->
+
+ <html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function jubilado(){
+                var edad = parseInt(prompt("Introduce tu edad :"));
+                var jub=false;
+
+	            if (edad>=65){
+		        jub=true;
+               
+	    }
+	    alert(jub?"Esta usted jubilado":"Todavía está usted en activo");
+     }
+
+     jubilado();
+        </script>
+    </body>
+ </html>
