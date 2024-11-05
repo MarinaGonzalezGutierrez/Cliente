@@ -1,0 +1,23 @@
+<!-- Escribir un programa que pida por teclado cuánto costó una cena, y escriba por teclado lo siguiente:
+1. La propina más pequeña vale: propinapeq
+2. La propina más grande vale: propinagra
+3. Donde propinapeq es un 15% del valor de la cena
+4. Donde propinagra es un 25% del valor de la cena -->
+
+
+<html>
+    <head>
+
+    </head>
+    <body>
+        <script>
+            function cena(){
+                let cost=parseInt(prompt("Introduce cuanto costo la cena"));
+	            let propinapeq = cost*0.15
+	            let propinagra = cost*0.25
+	            alert("La propina más pequeña vale: " + propinapeq + "\nLa propina más grande vale: " + propinagra);
+            }
+            cena();
+        </script>
+    </body>
+</html>
