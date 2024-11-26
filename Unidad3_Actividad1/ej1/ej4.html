@@ -1,0 +1,27 @@
+<!-- Hacer un programa mediante una función que permita introducir el nombre de usuario, el nombre
+del servidor y el dominio y nos devuelva la dirección de correo electrónica. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devolver direccion de correo</title>
+</head>
+<body>
+    <script>
+        function devolverCorreo(){
+            let nombreUsuario;
+            let nombreServidor;
+            let dominio;
+            
+            nombreUsuario = prompt("Introduce el nombre de usuario :");
+            nombreServidor = prompt("Introduce el nombre del servidor :");
+            dominio = prompt("Introduce el nombre del dominio :");
+
+            let correo = `${nombreUsuario}@${nombreServidor}.${dominio}`; //concatenacion para escribir el correo
+            alert(correo);
+        }
+        devolverCorreo();
+    </script>
+</body>
+</html>
