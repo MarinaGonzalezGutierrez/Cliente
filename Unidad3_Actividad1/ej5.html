@@ -1,0 +1,26 @@
+<!-- Generar en pantalla un Array con los 25 primeros naturales y su factorial -->
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>25 numeros naturales hacer factorial</title>
+ </head>
+ <body>
+    <script>
+        function factorialNumeros(){
+            let num = 25;
+            num = parseInt(num);
+
+            let factorial = 1;
+            for(let i=0; i< num; i++){
+                factorial = factorial * i;
+                
+                document.write(i+ " x ");
+                
+            }
+        }
+        factorialNumeros();
+    </script>
+ </body>
+ </html>
