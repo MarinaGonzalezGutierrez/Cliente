@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personas</title>
+    
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 0;
+        }
+        input, button {
+            margin: 5px;
+            padding: 8px;
+            font-size: 14px;
+        }
+        .results {
+            margin-top: 20px;
+        }
+        .results p {
+            margin: 5px 0;
+        }
+    </style>
+
+</head>
+<body>
+    <div>
+        <!-- placeholder = lo que se ve -->
+        <input type="text" id="nombre" placeholder="Nombre" >
+        <input type="number" id="peso" placeholder="Peso" >
+        <input type="number" id="altura" placeholder="Altura" >
+
+        <button onclick="almacenarPersona()">Añadir</button>
+        <button onclick="modificarPersona()">Modificar</button>
+        <button onclick="calcularImc()">Calcular</button>
+        
+    </div>
+
+    <div class="results" id="resultados"></div>
+
+
+    <script src="persona.js"></script>
+
+</body>
+</html>

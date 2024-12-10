@@ -1,0 +1,32 @@
+<!-- Hacer un programa mediante una función que permita calcular la suma de dos valores que se
+introducen por teclado. Visualizar el resultado en el cuerpo de la página Web.
+ -->
+
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de dos valores</title>
+ </head>
+ <body>
+    <script>
+        function sumaDosValores(){
+            let num1 = 0;
+            let num2 = 0;
+            let suma = 0;
+
+            // num1 = parseInt(num1);
+            // num2 = parseInt(num2);
+
+            num1 = prompt("Introduce el num1 :");
+            num2 = prompt("Introduce el num2 :");
+
+            suma = num1+ num2;
+            document.write("La suma de "+num1+ " + "+ num2+ " = " +suma);
+
+        }
+        sumaDosValores();
+    </script>
+ </body>
+ </html>
