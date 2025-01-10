@@ -1,8 +1,13 @@
 import logo from './logo.svg';
 import './App.css';
+import Acercade from './componentes/Acercade';
 
 function App() {
+  const nombre = 'Marina Gonzalez';
+  const elemento = <h1>Hola, {nombre}</h1>;
+
   return (
+    
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
@@ -17,7 +22,10 @@ function App() {
         >
           Learn React
         </a>
+
+        <h1>Hola, {nombre}</h1>
       </header>
+      <Acercade/>
     </div>
   );
 }
