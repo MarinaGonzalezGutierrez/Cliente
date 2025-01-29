@@ -36,6 +36,8 @@ import React, { useState } from 'react';
 import Acercade from './componentes/Acercade';
 import Variables2 from './componentes/Variables2';
 import { AdiosMundo } from './componentes/AdiosMundo';
+import Bucles from './componentes/Bucles';
+import Saludar from './componentes/Saludar';
 function App() {
   // Array de rutas de las imágenes
   const imageArray = [
@@ -58,6 +60,7 @@ function App() {
 
   return (
     <div className="App">
+      
       <h1>Galería de Imágenes</h1>
       <div className="image-gallery">
         <img
@@ -72,7 +75,8 @@ function App() {
           <button onClick={shownextimage}>Siguiente</button>
         </div>
       </div>
-
+    <Saludar nombre="Juan" edad="26" color="azul">
+    </Saludar>
     </div>
   );
 }
@@ -135,5 +139,6 @@ const styles = {
   },
 };
 
-<AdiosMundo></AdiosMundo>
-export default AdiosMundo;
+
+
+export default App;
