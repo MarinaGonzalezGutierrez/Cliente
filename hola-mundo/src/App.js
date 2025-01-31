@@ -38,6 +38,8 @@ import Variables2 from './componentes/Variables2';
 import { AdiosMundo } from './componentes/AdiosMundo';
 import Bucles from './componentes/Bucles';
 import Saludar from './componentes/Saludar';
+import EjemploEstado from './componentes/EjemploEstado';
+import EjemploEstado3 from './componentes/EjemploEstado3';
 function App() {
   // Array de rutas de las imágenes
   const imageArray = [
@@ -75,8 +77,10 @@ function App() {
           <button onClick={shownextimage}>Siguiente</button>
         </div>
       </div>
-    <Saludar nombre="Juan" edad="26" color="azul">
-    </Saludar>
+    {/* <Saludar nombre="Juan" edad="26" color="azul">
+    </Saludar> */}
+
+    <EjemploEstado3></EjemploEstado3>
     </div>
   );
 }

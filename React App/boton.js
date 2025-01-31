@@ -19,4 +19,9 @@ function Boton() {
     },
     "Cambia el color"
     );
-    }
+};
+
+const nodoRaiz = document.getElementById('boton');
+const raiz = ReactDOM.createRoot(nodoRaiz);
+const boton = React.createElement(Boton);
+raiz.render(boton);
