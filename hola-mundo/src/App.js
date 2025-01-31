@@ -40,6 +40,7 @@ import Bucles from './componentes/Bucles';
 import Saludar from './componentes/Saludar';
 import EjemploEstado from './componentes/EjemploEstado';
 import EjemploEstado3 from './componentes/EjemploEstado3';
+import Visor from './componentes/Visor';
 function App() {
   // Array de rutas de las imágenes
   const imageArray = [
@@ -81,6 +82,11 @@ function App() {
     </Saludar> */}
 
     <EjemploEstado3></EjemploEstado3>
+    </div>
+    <div className='App'>
+      <header className='App-header'>
+        <Visor imagenes={imagenesSrc}
+      </header>
     </div>
   );
 }
