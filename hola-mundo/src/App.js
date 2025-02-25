@@ -41,7 +41,10 @@ import Saludar from './componentes/Saludar';
 import EjemploEstado from './componentes/EjemploEstado';
 import EjemploEstado3 from './componentes/EjemploEstado3';
 import Visor from './componentes/Visor';
+import Filtrado from './componentes/filtrado';
 function App() {
+
+
   // Array de rutas de las imágenes
   // const imageArray = [
   //   './img/pinguino.jpg',
@@ -169,48 +172,48 @@ function App() {
 //   },
 // };
 
-const imagenesSrc = [
-  "images/imagen1.png",
-  "images/imagen2.png",
-  "images/imagen3.png",
-  "images/imagen4.png",
-  "images/imagen5.png",
-  "images/imagen6.png",
-  "images/imagen5.png"
-];
+// const imagenesSrc = [
+//   "images/imagen1.png",
+//   "images/imagen2.png",
+//   "images/imagen3.png",
+//   "images/imagen4.png",
+//   "images/imagen5.png",
+//   "images/imagen6.png",
+//   "images/imagen5.png"
+// ];
 
-const [currentindex, setcurrentindex] = useState(0);
+// const [currentindex, setcurrentindex] = useState(0);
 
-// Mostrar siguiente imagen
-const shownextimage = () => {
-  setcurrentindex((previndex) => (previndex + 1) % imagenesSrc.length);
-};
+// // Mostrar siguiente imagen
+// const shownextimage = () => {
+//   setcurrentindex((previndex) => (previndex + 1) % imagenesSrc.length);
+// };
 
-// Mostrar imagen anterior
-const showpreviousimage = () => {
-  setcurrentindex((previous) => (previous === 0 ? imagenesSrc.length - 1 : previous - 1));
-};
+// // Mostrar imagen anterior
+// const showpreviousimage = () => {
+//   setcurrentindex((previous) => (previous === 0 ? imagenesSrc.length - 1 : previous - 1));
+// };
 
-return (
-  <div className="App">
-    <h1>Galería de Imágenes</h1>
-    <div className="image-gallery">
-      <img
-        src={imagenesSrc[currentindex]}
-        alt={`img-${currentindex}`}
-        style={{ maxWidth: '300px', margin: '20px 0' }}
-      />
-      <div>
-        <button onClick={showpreviousimage} style={{ marginRight: '10px' }}>
-          Anterior
-        </button>
-        <button onClick={shownextimage}>Siguiente</button>
-      </div>
-    </div>
+// return (
+//   <div className="App">
+//     <h1>Galería de Imágenes</h1>
+//     <div className="image-gallery">
+//       <img
+//         src={imagenesSrc[currentindex]}
+//         alt={`img-${currentindex}`}
+//         style={{ maxWidth: '300px', margin: '20px 0' }}
+//       />
+//       <div>
+//         <button onClick={showpreviousimage} style={{ marginRight: '10px' }}>
+//           Anterior
+//         </button>
+//         <button onClick={shownextimage}>Siguiente</button>
+//       </div>
+//     </div>
 
-    <Visor imagenes={imagenesSrc} />
-  </div>
-);
+//     <Visor imagenes={imagenesSrc} />
+//   </div>
+// );
 }
 
 
